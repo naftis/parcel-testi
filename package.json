@@ -1,0 +1,18 @@
+{
+  "name": "parceltesti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "concurrently \"parcel watch src/*.html --no-hmr\" \"live-server --port=8000 ./dist/\"",
+    "build": "parcel build src/*.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.3.2"
+  }
+}
